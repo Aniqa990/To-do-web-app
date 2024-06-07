@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My To-do List</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <h1>To-do App</h1>
+    </header>
+    <div class="display">
+
+    <div class="list">
+        <h2>My To-do's</h2>
+        <div id="items">
+           
+        </div>
+
+     <div class="form">
+        <form class="adding-tasks">
+          <label for="task-name">Task Name : <input id="task-name" name="task-name" type="text"></label>
+          <label for="task-date">Due Date  : <input name=task-date id="task-date" type="date"></label>
+          <label for="task-desc">Description : <input name="task-desc" id="task-desc" type="text"></label>
+        <submit class="add-task" onclick="Addtask()" value="submit">+ Add task</submit>
+        </form>
+      </div>
+    </div>
+
+    <div class="description-tab">
+        <h2>Description</h2>
+        <div class="desc-items"> 
+           <div id="description"></div>
+        
+        <button class="edit" onclick="editing()">Edit Details</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
